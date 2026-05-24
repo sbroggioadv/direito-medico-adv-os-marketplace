@@ -1,0 +1,24 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Build / temp
+dist/
+build/
+*.zip
+*.tar.gz

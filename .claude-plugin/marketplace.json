@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "direito-medico-adv-os-marketplace",
+  "description": "Marketplace oficial do plugin Direito Medico Adv-OS. Sistema operacional do advogado especialista em direito medico e da saude.",
+  "owner": {
+    "name": "Sbroggio Advocacia & IA Combativa"
+  },
+  "plugins": [
+    {
+      "name": "direito-medico-adv-os",
+      "source": "./direito-medico-adv-os",
+      "description": "Sistema operacional do advogado especialista em direito medico e direito da saude. 37 skills + 11 commands + 4 hooks orquestrando defesa multi-frente do profissional (civil + criminal + etico-disciplinar), acoes contra plano de saude (oncologia, home care, OPME, TEA, reajuste, rescisao), consultivo empresarial para clinicas/sociedades medicas (Lei 12.842, LGPD, publicidade Res. CFM 2.336/2023) e revisao tecnica R1-R4 (Suprema Corte) em toda entrega. Inclui o Protocolo P4 — Cruzamento Multi-esfera (CC art. 935) para articulacao simultanea de civel, criminal e PED CRM/CRO.",
+      "author": {
+        "name": "Sbroggio Advocacia & IA Combativa"
+      }
+    }
+  ]
+}

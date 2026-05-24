@@ -1,0 +1,474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/cowork-state.json",
+  "title": "Cowork State - Plugin Direito Medico Adv-OS",
+  "description": "Estado persistente do workspace COWORK do usuario-cliente. Vive em <COWORK>/direito-medico/cowork-state.json. Atualizado a cada /start-medico ou comando que modifica configuracao. Plugin operacional para o advogado brasileiro que atua em direito medico e da saude - defesa profissional (civel + criminal + etico-disciplinar CRM/CRO), acoes contra plano de saude, consultivo empresarial para clinicas/sociedades medicas/hospitais.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "created_at",
+    "updated_at",
+    "identity",
+    "cowork_path",
+    "areas",
+    "skills",
+    "revisao_tecnica",
+    "tom_voz"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Versao do schema. SemVer. Usado para migrations."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC. Timestamp do primeiro /start."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC. Timestamp da ultima modificacao."
+    },
+    "plugin_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-z0-9.]+)?$",
+      "description": "Versao do plugin que criou/atualizou este state."
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["firm_name", "firm_slug", "advogado_nome"],
+      "properties": {
+        "firm_name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 200,
+          "description": "Nome da banca/escritorio como aparece em pecas e pareceres."
+        },
+        "firm_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 2,
+          "maxLength": 50,
+          "description": "Slug para paths/IDs. Ex: 'silva-advogados'."
+        },
+        "advogado_nome": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 200,
+          "description": "Nome completo do advogado responsavel."
+        },
+        "oab_numero": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9./-]+$",
+          "description": "Registro OAB (digitos, pontos, barras e hifens). Opcional."
+        },
+        "oab_uf": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{2}$",
+          "description": "UF da OAB. Ex: 'SP', 'RJ'. Opcional."
+        },
+        "cidade": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Cidade-sede do escritorio. Eixo do foro estadual e municipal (Protocolo 5)."
+        },
+        "uf": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{2}$",
+          "description": "UF-sede do escritorio. Eixo do foro estadual (Protocolo 5)."
+        },
+        "email": {
+          "type": ["string", "null"],
+          "format": "email",
+          "description": "Email de contato do escritorio."
+        },
+        "telefone": {
+          "type": ["string", "null"],
+          "maxLength": 30
+        },
+        "endereco": {
+          "type": ["string", "null"],
+          "maxLength": 500
+        }
+      }
+    },
+    "cowork_path": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path absoluto da pasta COWORK do usuario."
+    },
+    "persona_path": {
+      "type": "string",
+      "description": "Path absoluto do arquivo de persona. Normalmente <cowork_path>/direito-medico/persona.md"
+    },
+    "tom_voz": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["perfil", "intensidade_combativa"],
+      "properties": {
+        "perfil": {
+          "type": "string",
+          "enum": ["tecnico-objetivo", "tecnico-didatico", "tecnico-cordial", "personalizado"],
+          "default": "tecnico-objetivo",
+          "description": "Perfil de tom de voz. Default 'tecnico-objetivo'. 'personalizado' = usuario compos manualmente."
+        },
+        "intensidade_combativa": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10,
+          "default": 4,
+          "description": "Intensidade 0-10 do tom assertivo nas pecas. 0 = didatico-cordial. 10 = maximo direto e combativo."
+        },
+        "postura_default": {
+          "type": "string",
+          "description": "Postura default em pecas e comunicacoes. Frase curta. Ex: 'conservadorismo no quantum; sempre apontar divergencia jurisprudencial; jamais afirmar conduta clinica indevida'."
+        },
+        "expressoes_assinatura": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Expressoes caracteristicas que o advogado quer ver nas pecas (opt-in, user-provided)."
+        },
+        "termos_a_evitar": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Palavras/expressoes que o advogado NAO quer ver nos outputs."
+        }
+      }
+    },
+    "areas": {
+      "type": "array",
+      "description": "Frentes de atuacao ATIVAS. Cada uma gera uma pasta <cowork_path>/<area>/ com CLAUDE.md e MEMORY.md. Triagem em 4 dimensoes: sujeito x modo x esfera x subdominio.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "display_name"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[A-Z_-]+(/[A-Z_-]+)*$",
+            "description": "Slug em CAIXA-ALTA com hifen e/ou barra. Ex: 'DEFESA-PROFISSIONAL', 'PLANO-SAUDE', 'CONSULTIVO-CLINICA'."
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Nome amigavel. Ex: 'Defesa profissional', 'Acoes contra plano de saude', 'Consultivo empresarial - clinica/sociedade medica'."
+          },
+          "frente": {
+            "type": "string",
+            "enum": [
+              "defesa-profissional",
+              "responsabilidade-civil",
+              "criminal-medico",
+              "ped-conselho",
+              "acoes-plano-saude",
+              "consultivo-clinica",
+              "regulatorio-saude",
+              "saude-mental",
+              "reproducao-assistida"
+            ],
+            "default": "defesa-profissional",
+            "description": "Frente do direito medico (ver Tiers da arquitetura - 36 skills em 7 Tiers)."
+          },
+          "sujeito_predominante": {
+            "type": ["string", "null"],
+            "enum": ["profissional-saude", "clinica-pj", "hospital-pj", "paciente-pf", "operadora-pj", "ambos", null],
+            "description": "Sujeito que o escritorio atende predominantemente nessa frente."
+          },
+          "modo_predominante": {
+            "type": ["string", "null"],
+            "enum": ["consultivo", "contencioso", "ambos", null],
+            "description": "Modo de atuacao - consultivo (preventivo) ou contencioso (litigioso) ou ambos."
+          },
+          "subfolders": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": ["Clientes", "Casos", "Pecas", "Pareceres", "Contratos", "Provas"],
+            "description": "Subpastas criadas dentro de <cowork>/<area>/."
+          },
+          "skills_sugeridas": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Skills sugeridas para esta frente (usado pelo wizard na selecao de skills)."
+          },
+          "activated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "area_foco": {
+      "type": "string",
+      "enum": ["defesa-profissional", "plano-saude", "consultivo", "todos"],
+      "default": "todos",
+      "description": "Area predominante do escritorio para priorizacao de roteamento pelo medico-master. Default 'todos' (escritorio atua em todas as frentes)."
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["invariants", "opt_in_active", "opt_in_inactive"],
+      "description": "Skills ativas/inativas. Invariantes sao SEMPRE ativas (nao-removiveis).",
+      "properties": {
+        "invariants": {
+          "type": "array",
+          "description": "Skills SEMPRE ativas (nao-removiveis): medico-master (Tier 0 - orquestracao + 22 PAs + 4 Camadas + 6 Protocolos) + validador-legislacao-vigente (Tier 0 - validacao de vigencia federal + CFM/CFO + STJ + ANS + ANVISA, emite o Selo de Validacao Legal Previa) + revisao-final-medica (auditoria de qualidade R1-R4) + estilo-entrega-medica (padrao FIRAC de peca/parecer + memoria de quantum + ressalva OAB) + memoria-de-caso-medico (compartimentacao de casos por cliente, LGPD).",
+          "items": { "type": "string" },
+          "default": [
+            "medico-master",
+            "validador-legislacao-vigente",
+            "revisao-final-medica",
+            "estilo-entrega-medica",
+            "memoria-de-caso-medico"
+          ]
+        },
+        "opt_in_active": {
+          "type": "array",
+          "description": "Skills opt-in que o usuario escolheu ativar no wizard.",
+          "items": { "type": "string" }
+        },
+        "opt_in_inactive": {
+          "type": "array",
+          "description": "Skills opt-in que o usuario optou por NAO ativar (lembrado para re-oferecer depois).",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "revisao_tecnica": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "bypass_threshold_words"],
+      "description": "Camada de auditoria de qualidade R1-R4 (skill revisao-final-medica) sobre toda entrega antes de devolver ao usuario.",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Revisao Tecnica ativa por default. Pode ser desativada via /revisao off (session toggle)."
+        },
+        "bypass_threshold_words": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 200,
+          "description": "Tarefas com output < N palavras recebem sugestao de bypass. 0 = nunca sugerir bypass."
+        },
+        "auto_apply_to": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["pecas", "pareceres", "estrategias", "contratos", "tcle", "memoriais", "decks", "tudo"]
+          },
+          "default": ["pecas", "pareceres", "estrategias"],
+          "description": "Tipos de entrega em que a Revisao Tecnica R1-R4 e aplicada automaticamente."
+        }
+      }
+    },
+    "tools": {
+      "type": "object",
+      "description": "Ferramentas externas do escritorio juridico que o usuario ja utiliza. Cada campo e opt-in - pode ser null/string vazia se nao usado. Skills leem esses campos para adaptar recomendacoes sem hardcoding de produtos especificos.",
+      "additionalProperties": false,
+      "properties": {
+        "sistema_juridico": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre do sistema de gestao juridica utilizado (controle de prazos, peticionamento, andamentos)."
+        },
+        "peticionamento_eletronico": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre da plataforma de peticionamento (PJe, eproc, Projudi, etc.) mais usada."
+        },
+        "tarefas_projetos": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre da ferramenta de gestao de tarefas e prazos do escritorio."
+        },
+        "crm_leads": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre do CRM utilizado para leads e relacionamento com clientes."
+        },
+        "email_provider": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre do provedor de email institucional do escritorio."
+        },
+        "banco_psp": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre do banco ou PSP utilizado para cobranca/pagamentos."
+        },
+        "armazenamento_nuvem": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre do servico de armazenamento em nuvem. Atencao: NAO e recomendado colocar pasta COWORK dentro de pasta sincronizada (conflito git/hooks + risco LGPD com dados sensiveis de paciente)."
+        },
+        "assinatura_digital": {
+          "type": ["string", "null"],
+          "maxLength": 100,
+          "description": "Nome livre da plataforma de assinatura digital / certificado digital utilizada."
+        },
+        "outras": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["nome", "categoria"],
+            "properties": {
+              "nome": { "type": "string", "maxLength": 100 },
+              "categoria": { "type": "string", "maxLength": 80, "description": "Ex: 'calculadora trabalhista', 'consulta CNES', 'plataforma de TCLE'." },
+              "nota": { "type": "string", "maxLength": 300 }
+            }
+          },
+          "description": "Ferramentas adicionais que o usuario quer declarar."
+        }
+      }
+    },
+    "connectors": {
+      "type": "object",
+      "description": "Conectores oficiais da Anthropic (via Claude app ou Claude Code) que o usuario ja conectou a sua conta. Skills leem para adaptar sugestoes de automacao. SEMPRE OPT-IN - nada habilitado por default.",
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "type": "array",
+          "description": "Lista de conectores Anthropic disponiveis que o usuario declarou ter conectado.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "gmail",
+              "gdrive",
+              "gcalendar",
+              "gdocs",
+              "gsheets",
+              "slack",
+              "github",
+              "notion",
+              "asana",
+              "linear",
+              "jira",
+              "zoom",
+              "microsoft-outlook",
+              "microsoft-teams",
+              "microsoft-onedrive",
+              "dropbox",
+              "zapier",
+              "make",
+              "custom-mcp"
+            ]
+          }
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "maxLength": 500,
+          "description": "Notas livres do usuario sobre conectores."
+        }
+      }
+    },
+    "automations": {
+      "type": "object",
+      "description": "Automacoes agendadas que o usuario ativou via /start. Opt-in.",
+      "additionalProperties": false,
+      "properties": {
+        "email_triage": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "cron": { "type": "string" },
+            "mcp": { "type": "string", "description": "Nome do MCP conector (ex: 'gmail')." }
+          }
+        },
+        "monitor_prazos": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "cron": { "type": "string", "description": "Alerta recorrente de prazos processuais e PED." }
+          }
+        },
+        "weekly_report": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "cron": { "type": "string", "default": "0 8 * * 1" }
+          }
+        },
+        "legislacao_watch": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "topics": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Ex: 'Rol ANS', 'Telemedicina', 'CFM publicidade', 'STJ saude'"
+            },
+            "cron": { "type": "string" }
+          }
+        }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "idioma": {
+          "type": "string",
+          "enum": ["pt-BR"],
+          "default": "pt-BR"
+        },
+        "output_format_preferido": {
+          "type": "string",
+          "enum": ["docx", "pdf", "xlsx", "md"],
+          "default": "docx"
+        },
+        "modo_melhor_saida": {
+          "type": "string",
+          "enum": ["recomendar-e-listar", "apenas-listar"],
+          "default": "recomendar-e-listar",
+          "description": "Comportamento de skills de comparacao de teses/estrategia. 'recomendar-e-listar' = recomenda a melhor opcao E lista alternativas (default). 'apenas-listar' = apresenta as opcoes sem recomendar, o advogado decide."
+        },
+        "papel_timbrado_path": {
+          "type": ["string", "null"],
+          "description": "Path opcional para .docx de papel timbrado do escritorio. Se null, usa template default do plugin."
+        },
+        "sync_folder_warning_acknowledged": {
+          "type": "boolean",
+          "default": false,
+          "description": "True se usuario reconheceu warning de pasta sincronizada (iCloud/OneDrive/Dropbox). Evita warning repetido."
+        },
+        "memory_evolver_session_muted": {
+          "type": "boolean",
+          "default": false,
+          "description": "Escape session-only: se true, o hook PostToolUse nao registra pending. Reseta para false no proximo SessionStart por padrao."
+        },
+        "cowork_sync_session_muted": {
+          "type": "boolean",
+          "default": false,
+          "description": "Escape session-only: se true, avisos de divergencia multi-dispositivo ficam silenciados ate o fim da sessao."
+        }
+      }
+    },
+    "wizard_state": {
+      "type": "object",
+      "description": "Estado do wizard /start. Permite retomada se interrompido.",
+      "additionalProperties": false,
+      "properties": {
+        "completed": {
+          "type": "boolean",
+          "default": false
+        },
+        "current_step": {
+          "type": "string",
+          "description": "Passo atual se incompleto. Ex: 'identity', 'localizacao', 'area_foco', 'frentes', 'skills', 'tom', 'review'."
+        },
+        "completed_steps": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "last_interaction_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
