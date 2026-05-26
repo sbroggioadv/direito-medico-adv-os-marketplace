@@ -1,7 +1,7 @@
 {
   "name": "direito-medico-adv-os",
   "version": "0.1.0",
-  "description": "Sistema operacional do advogado brasileiro especializado em direito medico e da saude. 36 skills em 7 Tiers cobrindo defesa multi-frente do profissional de saude (responsabilidade civil + criminal por culpa medica + processo etico-disciplinar CRM/CRO), acoes contra operadoras de plano de saude, e consultivo empresarial para clinicas/sociedades medicas/hospitais. Inclui governanca de 4 Camadas (22 Proibicoes Absolutas + 6 Protocolos Tecnicos + Identidade FIRAC + Skills) e Revisao Tecnica R1-R4 sobre toda entrega. Atualizado com a reforma legislativa 2022-2026 (Lei 14.510 telemedicina, Lei 14.454 Rol ANS exemplificativo, Res. CFM 2.336 publicidade medica, Res. CFM 2.337 HOF, Lei 15.378/2026 Estatuto dos Direitos do Paciente).",
+  "description": "Sistema operacional do advogado brasileiro especializado em direito medico e da saude. 37 skills em 7 Tiers cobrindo defesa multi-frente do profissional de saude (responsabilidade civil + criminal por culpa medica + processo etico-disciplinar CRM/CRO), acoes contra operadoras de plano de saude, e consultivo empresarial para clinicas/sociedades medicas/hospitais. Inclui governanca de 4 Camadas (22 Proibicoes Absolutas + 6 Protocolos Tecnicos + Identidade FIRAC + Skills) e Revisao Tecnica R1-R4 sobre toda entrega. Atualizado com a reforma legislativa 2022-2026 (Lei 14.510 telemedicina, Lei 14.454 Rol ANS exemplificativo, Res. CFM 2.336 publicidade medica, Res. CFM 2.337 HOF, Lei 15.378/2026 Estatuto dos Direitos do Paciente).",
   "author": {
     "name": "Sbroggio Advocacia & IA Combativa"
   },
