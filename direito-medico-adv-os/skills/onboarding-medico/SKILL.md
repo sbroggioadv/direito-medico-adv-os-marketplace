@@ -4,6 +4,8 @@ description: >
   Wizard de configuracao inicial do plugin no ambiente do escritorio de advocacia medica. Coleta identidade do advogado (nome, OAB e UF), escritorio, cidade e UF de atuacao (eixo critico — Protocolo 5: CRM/CRO regional, foro estadual, JF para MS contra conselho), AREA_FOCO (defesa-profissional / plano-saude / consultivo / todos), frentes ativas, tom de voz e modo de melhor saida. Grava persona local em `<cwd>/direito-medico/persona.md` (fora do plugin distribuido). LGPD reforcada — alerta agressivo se pasta sincronizada (dados de paciente sao sensiveis, LGPD art. 11 + art. 154 CP). Aciona: configurar plugin, primeira vez, /start-medico, onboarding, instalar, comecar a usar, configurar escritorio, persona.
 ---
 
+> **🖱️ Escolhas = botoes:** em campos de **lista fechada** (AREA_FOCO, tom, modo, atualizar/recriar, sim/nao) use a ferramenta **AskUserQuestion** para mostrar **botoes clicaveis** (max. 4 por pergunta; se houver mais, divida em 2). **Texto livre** (nome, OAB, cidade, e-mail) segue como pergunta digitada normal.
+
 # ONBOARDING MEDICO
 
 > Wizard de configuracao inicial **Tier 0**. Linguagem acolhedora, tom didatico. Conduz o operador a configurar o plugin ao perfil do escritorio de direito medico — com atencao especial a **localizacao** (cidade + UF — eixo do Protocolo 5), a **AREA_FOCO** (define prioridade de roteamento) e ao alerta LGPD agressivo (prontuario e dado sensivel — PA-16, PA-22).
