@@ -16,6 +16,22 @@
 > 11/08/2026 em diante, para quem chega ao repositório sem ter adquirido.
 
 
+> ## ⚖️ Este repositório NÃO é software livre
+>
+> O código fica visível para viabilizar a instalação no Claude/Cowork — não porque seja gratuito.
+>
+> **DIREITO MEDICO ADV-OS — R$ 258,00, pagamento único** (sem assinatura, sem recorrência)
+> 👉 **[Adquirir a licença](https://pay.kirvano.com/44178dbe-654a-40d7-970b-3b16b57197a5)**
+>
+> **Ao forkar ou clonar este repositório você adere à [licença de uso](LICENSE)**, devendo efetuar o
+> pagamento no link acima e enviar o comprovante para **luis@sbroggio.com.br**.
+>
+> Os forks são públicos no GitHub e são registrados pelo titular (data, conta e repositório).
+>
+> **Já comprou?** Nada a fazer — sua licença cobre o uso e o fork para instalação. Este aviso vale de
+> 11/08/2026 em diante, para quem chega ao repositório sem ter adquirido.
+
+
 Marketplace oficial do plugin **Direito Medico Adv-OS** — sistema operacional do advogado especialista em direito medico e da saude.
 
 ## O que o plugin entrega
