@@ -1,7 +1,7 @@
 ---
 name: contrato-prestacao-medica
 description: >
-  Contratos de prestacao de servicos medicos/odontologicos em 3 modalidades — PJ-PJ (clinica contrata empresa de plantonistas), PJ-PF (clinica contrata medico autonomo), PF-PF (paciente x medico privado). Atencao especial a pejotizacao (Lei 13.467/2017 — reforma trabalhista admite + STF RE 958.252 + Sum. 331 TST — distinguir vinculo CLT de PJ legitima), plantao (medico-plantonista CLT x PJ), responsabilidade civil compartilhada (Sum. 469 STJ + CDC art. 14 + CC art. 951), nao-concorrencia, sigilo, exclusividade, multa, rescisao. Aplica Lei 12.842/2013 (ato medico privativo) + CC arts. 593-609 (prestacao de servico) + CDC 14 + CLT 3o (vinculo). Aciona: contrato prestacao medica, pejotizacao medica, plantao medico, contrato plantonista, vinculo CLT medico, RE 958.252, Sum 331 TST, nao concorrencia medica, contrato PJ clinica, contrato medico autonomo.
+  Contratos de prestacao de servicos medicos/odontologicos em 3 modalidades — PJ-PJ (clinica contrata empresa de plantonistas), PJ-PF (clinica contrata medico autonomo), PF-PF (paciente x medico privado). Atencao especial a pejotizacao (Lei 13.467/2017 — reforma trabalhista admite + STF RE 958.252 + Sum. 331 TST — distinguir vinculo CLT de PJ legitima), plantao (medico-plantonista CLT x PJ), responsabilidade civil compartilhada (Sum. 608 STJ + CDC art. 14 + CC art. 951), nao-concorrencia, sigilo, exclusividade, multa, rescisao. Aplica Lei 12.842/2013 (ato medico privativo) + CC arts. 593-609 (prestacao de servico) + CDC 14 + CLT 3o (vinculo). Aciona: contrato prestacao medica, pejotizacao medica, plantao medico, contrato plantonista, vinculo CLT medico, RE 958.252, Sum 331 TST, nao concorrencia medica, contrato PJ clinica, contrato medico autonomo.
 ---
 
 # CONTRATO DE PRESTACAO MEDICA
@@ -33,7 +33,7 @@ Elaboracao/analise de contratos: (a) **clinica/hospital PJ contrata medico PF** 
 | **Sum. 331 TST** | Vinculo se fraude — pejotizacao com elementos de CLT e vinculada |
 | CDC art. 14 + 14§4o | Objetiva da PJ + subjetiva do profissional liberal |
 | CC art. 951 | Subjetiva do medico PF |
-| Sum. 469 STJ | CDC em plano de saude — reflexo |
+| Sum. 608 STJ | CDC em plano de saude — reflexo |
 | CF art. 5o XX | Livre exercicio de associacao/profissao |
 | Codigo Civil arts. 1.011-1.027 | Acordo de socios |
 
@@ -80,7 +80,7 @@ CLT art. 3o vinculo se cumulativos:
 | **Exclusividade** | Vedada exclusividade absoluta — sinal de vinculo CLT |
 | **Nao-concorrencia pos-contratual** | 2-5a + raio geografico + compensacao financeira — STJ admite com razoabilidade |
 | **Sigilo (LGPD + Res. CFM 1.821)** | Clinica e controladora; medico operador; cadeia de responsabilidade |
-| **Responsabilidade civil compartilhada** | Sum. 469 + CDC 14 — clinica objetiva; medico subjetiva — clausula de regresso |
+| **Responsabilidade civil compartilhada** | Sum. 608 + CDC 14 — clinica objetiva; medico subjetiva — clausula de regresso |
 | **Seguro de responsabilidade civil** | Quem paga + cobertura — recomendar a clinica |
 | **Multa rescisoria** | Razoavel — sem desnaturar autonomia |
 | **Foro / Arbitragem** | JE comarca + arbitragem em hospital grande |
@@ -132,7 +132,7 @@ SIGILO + LGPD — Cl. 5a — CLINICA e CONTROLADORA (Res. CFM 1.821 + LGPD);
    MEDICO opera dados com finalidade de cuidado; obrigacoes art. 6o LGPD
 
 RESPONSABILIDADE — Cl. 6a — CLINICA assume RC objetiva (CDC 14 +
-   Sum. 469 STJ); MEDICO assume RC subjetiva (CC 951); clausula de regresso
+   Sum. 608 STJ); MEDICO assume RC subjetiva (CC 951); clausula de regresso
 
 NAO-CONCORRENCIA — Cl. 7a — apos a rescisao, MEDICO se obriga por 24 meses
    a nao prestar servicos em raio de 5 km mediante compensacao mensal
@@ -182,4 +182,4 @@ JE da comarca do estabelecimento ou domicilio do contratado (CC 53). Justica do 
 
 **Entrega para:** minuta + parecer de risco trabalhista -> `revisao-final-medica` -> operador. Cruza com `lgpd-saude`, `credenciamento-plano-saude`.
 
-**Sem esta skill:** contratos genericos que ignoram pejotizacao (Sum. 331 TST), autonomia tecnica (Lei 12.842), responsabilidade compartilhada (Sum. 469 + CDC 14) — exposicao a vinculo CLT + responsabilidade objetiva nao distribuida.
+**Sem esta skill:** contratos genericos que ignoram pejotizacao (Sum. 331 TST), autonomia tecnica (Lei 12.842), responsabilidade compartilhada (Sum. 608 + CDC 14) — exposicao a vinculo CLT + responsabilidade objetiva nao distribuida.

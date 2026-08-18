@@ -165,7 +165,7 @@ LLM resolve em runtime via persona em `<cwd>/direito-medico/persona.md`. **No pr
 | Lei | Lei 9.656/1998 art. 10§4o |
 | CC/CP/CPP/CPC | CC art. 951 / CP art. 121§3o / CPP art. 386 III / CPC art. 300 |
 | Constitucional | CF art. 5o LV |
-| Sumula STJ | STJ Sum. 469 / Sum. 608 / Sum. 105 |
+| Sumula STJ | STJ Sum. 608 / Sum. 597 / Sum. 105 |
 | Tema STJ | STJ Tema 990 (pos-Lei 14.454/2022) |
 | REsp paradigma | STJ REsp 1.733.013/PR (2a Turma, Min. ___, 2019) |
 | Resolucao | Res. CFM 2.336/2023 art. 13 |

@@ -1,7 +1,7 @@
 ---
 name: acao-reajuste-abusivo
 description: >
-  Acao revisional/declaratoria contra reajuste abusivo de mensalidade de plano de saude — individual/familiar (controle ANS via IPCA-Saude) e coletivo empresarial/por adesao (controle nao-direto da ANS). Aplica Lei 9.656/1998 + Tema 952 STJ (reajuste por faixa etaria — exige base atuarial e nao pode ser excessivo) + Sum. 608 STJ (CDC em coletivos) + Lei 10.741/2003 art. 15§3o (Estatuto do Idoso — vedacao a reajuste apos 60a por faixa) + Sum. 91 ANS + RN ANS 195/2009. Distingue 3 modalidades: reajuste anual (IPCA + variacao de custos); reajuste por faixa etaria (10 faixas); reajuste por sinistralidade (coletivos). Tese central: razoabilidade + base atuarial + transparencia + vedacao a discriminacao etaria. Tutela de urgencia (descontinuidade do plano). Conservadorismo (PA-21). Aciona: reajuste abusivo, mensalidade abusiva, Tema 952, faixa etaria, Estatuto Idoso plano, sinistralidade coletivo, IPCA-Saude, RN 195, Sum 608, revisional plano, Sum 91 ANS.
+  Acao revisional/declaratoria contra reajuste abusivo de mensalidade de plano de saude — individual/familiar (controle ANS via IPCA-Saude) e coletivo empresarial/por adesao (controle nao-direto da ANS). Aplica Lei 9.656/1998 + Tema 952 STJ (reajuste por faixa etaria — exige base atuarial e nao pode ser excessivo) + Sum. 608 STJ (CDC aplica-se a planos, salvo autogestao) + Lei 10.741/2003 art. 15§3o (Estatuto do Idoso — vedacao a reajuste apos 60a por faixa) + Sum. 91 ANS + RN ANS 195/2009. Distingue 3 modalidades: reajuste anual (IPCA + variacao de custos); reajuste por faixa etaria (10 faixas); reajuste por sinistralidade (coletivos). Tese central: razoabilidade + base atuarial + transparencia + vedacao a discriminacao etaria. Tutela de urgencia (descontinuidade do plano). Conservadorismo (PA-21). Aciona: reajuste abusivo, mensalidade abusiva, Tema 952, faixa etaria, Estatuto Idoso plano, sinistralidade coletivo, IPCA-Saude, RN 195, Sum 608, revisional plano, Sum 91 ANS.
 ---
 
 # ACAO REAJUSTE ABUSIVO DE PLANO DE SAUDE
@@ -37,8 +37,8 @@ Acao do beneficiario contra operadora por reajuste abusivo em (a) **individual/f
 **Jurisprudencia:**
 - **STJ Tema 952** — reajuste por faixa etaria exige base atuarial + razoabilidade (sem excesso); apos 60a em contratos pos-Estatuto Idoso, vedado
 - STJ Sum. 91 ANS (administrativa)
-- **STJ Sum. 608** — CDC aplica em coletivos
-- STJ Sum. 469 (CDC em planos)
+- **STJ Sum. 608** — CDC aplica-se a planos de saude, salvo autogestao
+- ⛔ Sum. 469 — CANCELADA (11/04/2018); NAO CITAR (materia hoje na Sum. 608)
 - STJ Sum. 302 (vedacao limite internacao)
 - STJ AgInt REsp 1.876.543 (sinistralidade em coletivo exige fundamentacao tecnica)
 - STJ EREsp 1.385.732 (matérias prescricao)
@@ -114,7 +114,7 @@ I — FATOS — contrato, historico de reajustes, abusividade caracterizada
 II — ISSUE — reajuste de [%] viola Lei 9.656/1998 + Tema 952 STJ + Estatuto Idoso?
 
 III — DIREITO
-  III.1 Regime — CDC 14 (PA-15) + Sum. 608 STJ (coletivos) ou Sum. 469
+  III.1 Regime — CDC 14 (PA-15) + Sum. 608 STJ
   III.2 Lei 9.656 + RN ANS 195/309 — indice oficial obrigatorio (individual)
   III.3 Tema 952 STJ — faixa etaria: base atuarial + razoabilidade
   III.4 Lei 10.741 art. 15§3o — vedado apos 60a (contrato pos-2004)

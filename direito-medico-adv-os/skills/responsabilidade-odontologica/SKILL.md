@@ -55,7 +55,7 @@ Acionada em demanda envolvendo cirurgiao-dentista (PF) ou clinica odontologica (
 
 - CDC aplica-se integralmente a relacao CD-paciente (clinica/profissional).
 - **Carencia abusiva > 24h em urgencia odontologica** — Sum. 597 — clausula nula.
-- **Inversao do onus** — CDC art. 6o VIII + Sum. 469 STJ (planos odontologicos) / Sum. 597 (CDC odonto geral).
+- **Inversao do onus** — CDC art. 6o VIII + Sum. 608 STJ (planos odontologicos, salvo autogestao) / Sum. 597 (CDC odonto geral).
 
 ## 5. HOF — Harmonizacao Orofacial (conflito ativo)
 
@@ -104,7 +104,7 @@ III.2 — Regime do procedimento (PA-15 — ver tabela 3):
         - Endo/perio/ortodontia = meio
         - Misto: avaliacao especifica
 III.3 — CDC aplicavel — Sum. 597 STJ
-III.4 — Inversao do onus — CDC art. 6o VIII / Sum. 469
+III.4 — Inversao do onus — CDC art. 6o VIII / Sum. 608
 III.5 — Quantum conservador (P3)
 ```
 

@@ -1,7 +1,7 @@
 ---
 name: acao-tea-multidisciplinar
 description: >
-  Acao contra operadora por negativa/limitacao de tratamento multidisciplinar de Transtorno do Espectro Autista (TEA) — terapia ABA, fonoaudiologia, terapia ocupacional, psicologia, psicomotricidade, equoterapia, musicoterapia, integracao sensorial. Aplica Lei 12.764/2012 (Lei Berenice Piana — TEA equiparado a deficiencia para fins legais) + Lei 13.146/2015 (LBI) + Lei 14.454/2022 (Rol exemplificativo) + RN ANS 469/2021 + RN ANS 539/2022 (cobertura ilimitada de sessoes para TEA) + Sum. 469/608 STJ + Tema 990 pos-Lei 14.454. Vedacao de limite numerico de sessoes (RN 539). Vedacao de exigencia de habilitacao especifica da clinica (criterio cientifico aceito basta). Tutela de urgencia — janela neurodesenvolvimental tempo-critica (0-6 anos, depois 7-12). Conservadorismo (PA-21). Aciona: TEA negado, autismo plano de saude, terapia ABA, fonoaudiologia TEA, terapia ocupacional TEA, RN 539, RN 469, Lei 12.764, Berenice Piana, sessoes ilimitadas, janela neurodesenvolvimental, neurodivergente.
+  Acao contra operadora por negativa/limitacao de tratamento multidisciplinar de Transtorno do Espectro Autista (TEA) — terapia ABA, fonoaudiologia, terapia ocupacional, psicologia, psicomotricidade, equoterapia, musicoterapia, integracao sensorial. Aplica Lei 12.764/2012 (Lei Berenice Piana — TEA equiparado a deficiencia para fins legais) + Lei 13.146/2015 (LBI) + Lei 14.454/2022 (Rol exemplificativo) + RN ANS 469/2021 + RN ANS 539/2022 (cobertura ilimitada de sessoes para TEA) + ADI 7265/STF (fora do Rol) + Sum. 608 STJ + Tema 990 pos-Lei 14.454. Veda limite numerico de sessoes (RN 539) e exigencia de habilitacao especifica da clinica (criterio cientifico basta). Tutela de urgencia — janela neurodesenvolvimental tempo-critica (0-6a, depois 7-12). Conservadorismo (PA-21). Aciona: TEA negado, autismo plano de saude, terapia ABA, fonoaudiologia TEA, terapia ocupacional TEA, RN 539, RN 469, Lei 12.764, Berenice Piana, sessoes ilimitadas, janela neurodesenvolvimental, neurodivergente.
 ---
 
 # ACAO TEA — TRATAMENTO MULTIDISCIPLINAR
@@ -39,8 +39,9 @@ Acao do paciente neurodivergente (TEA) — geralmente crianca representada pelos
 | CPC 300 / 537 | Tutela + astreintes |
 
 **Jurisprudencia:**
-- STJ Sum. 469 (CDC em planos)
-- STJ Sum. 608 (CDC em coletivos)
+- STJ Sum. 608 — CDC aplica-se a planos de saude, salvo autogestao
+- ⛔ Sum. 469 — CANCELADA (11/04/2018); NAO CITAR
+- **STF ADI 7265/DF** (Pleno, j. 18/09/2025, vinculante) — se a terapia estiver fora do Rol (nao coberta por RN 539), exige os 5 requisitos cumulativos
 - **Tema 990 STJ pos-Lei 14.454** — Rol exemplificativo
 - STJ AgInt REsp 1.876.543 (cobertura ABA em TEA) `[VERIFICAR jurisprudencia atual]`
 - TJSP / TJRJ — jurisprudencia consolidada — tutela quase sempre concedida
@@ -50,7 +51,7 @@ Acao do paciente neurodivergente (TEA) — geralmente crianca representada pelos
 | Negativa | Tese |
 |----------|------|
 | **"Limite de 40 sessoes/ano"** | **RN 539/2022 veda limite** — coberta integralmente |
-| **"ABA nao consta no Rol"** | Lei 14.454 + RN 469 + jurisprudencia consolidada |
+| **"ABA nao consta no Rol"** | Lei 14.454 + RN 469 + jurisprudencia consolidada + ADI 7265 (5 requisitos, se realmente fora do Rol) |
 | **"Clinica nao credenciada"** | LBI + CDC + ausencia de equivalencia na rede |
 | **"Habilitacao especifica da clinica"** | Criterio cientifico aceito basta — sem cartorial |
 | **"Equoterapia/musicoterapia experimentais"** | Distinguir — sao terapias **adjuvantes reconhecidas** (literatura) |
@@ -110,7 +111,7 @@ I — FATOS — diagnostico TEA (CID F84), plano terapeutico, negativa/limitacao
 II — ISSUE — negativa/limitacao viola Lei 12.764 + LBI + RN 469/539 + Lei 14.454?
 
 III — DIREITO
-  III.1 Regime — CDC 14 (PA-15) + Sum. 469 STJ
+  III.1 Regime — CDC 14 (PA-15) + Sum. 608 STJ
   III.2 Lei 12.764/2012 — TEA equiparado a deficiencia
   III.3 LBI Lei 13.146/2015 — protecao integral
   III.4 RN ANS 469/2021 + RN 539/2022 — sessoes sem limite numerico

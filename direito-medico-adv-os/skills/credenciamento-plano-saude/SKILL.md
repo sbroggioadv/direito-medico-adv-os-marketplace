@@ -34,7 +34,7 @@ Consultivo e contencioso para (a) **credenciamento** de clinica/hospital/medico 
 | RN ANS 471/2021 | TUSS — tabela unificada |
 | CC art. 421 + 422 | Funcao social + boa-fe |
 | CDC art. 14 + 39 + 51 IV/X | Objetiva + abusivas |
-| Sum. 469 / 608 STJ | CDC |
+| Sum. 608 STJ | CDC aplica-se a planos de saude, salvo autogestao |
 | CPC 300 / 537 | Tutela |
 | Lei 8.078/90 art. 7o paragrafo unico (relacao acessoria) | Aplicacao reflexa |
 

@@ -1,7 +1,7 @@
 ---
 name: acao-negativa-cobertura-oncologica
 description: >
-  Acao contra operadora por negativa de cobertura de tratamento oncologico — quimioterapia/imunoterapia/terapia-alvo (incluindo off-label e nao-Rol), cirurgia oncologica, radioterapia, PET-CT, transplante, medicamentos de alto custo. Aplica Lei 9.656/1998 + Lei 14.454/2022 (que tornou o Rol ANS exemplificativo) + Tema 990 STJ pos-Lei 14.454 + Sum. 469 STJ (CDC) + Sum. 597 (CDC + autogestao). Criterios pos-Lei 14.454 art. 10§13: comprovacao de eficacia + recomendacao de orgao tecnico (CONITEC, SBOC, NICE, etc.) ou aprovacao FDA/EMA/PMDA + bula nacional/internacional + ausencia de substituto pelo Rol. Tutela de urgencia CPC 300 — gravidade clinica + tempo (chance de cura tempo-dependente — perda de chance). Conservadorismo (PA-21) no quantum. Aciona: negativa oncologia, quimioterapia negada, imunoterapia, off-label, Lei 14.454, Tema 990 STJ, Rol exemplificativo, alto custo plano, transplante negado, PET-CT negado, SBOC, NICE, CONITEC, terapia alvo.
+  Acao contra operadora por negativa de cobertura de tratamento oncologico — quimioterapia/imunoterapia/terapia-alvo (incluindo off-label e nao-Rol), cirurgia oncologica, radioterapia, PET-CT, transplante, medicamentos de alto custo. Aplica Lei 9.656/1998 + Lei 14.454/2022 (que tornou o Rol ANS exemplificativo) + **ADI 7265/STF (Pleno, vinculante — 5 requisitos cumulativos para cobertura fora do Rol, ver Secao 3)** + Tema 990 STJ pos-Lei 14.454 + Sum. 608 STJ (CDC, salvo autogestao). Tutela de urgencia CPC 300 — gravidade clinica + tempo (chance de cura tempo-dependente — perda de chance). Conservadorismo (PA-21) no quantum. Aciona: negativa oncologia, quimioterapia negada, imunoterapia, off-label, Lei 14.454, ADI 7265, Tema 990 STJ, Rol exemplificativo, alto custo plano, transplante negado, PET-CT negado, SBOC, NICE, CONITEC, terapia alvo.
 ---
 
 # ACAO NEGATIVA DE COBERTURA ONCOLOGICA
@@ -36,7 +36,7 @@ Acao do paciente/beneficiario contra operadora por negativa de tratamento oncolo
 | CPC art. 300 | Tutela de urgencia |
 | CPC art. 537 | Astreintes |
 
-**Sumulas STJ:** **469** (CDC em plano de saude); **597** (CDC nao em autogestao; carencia > 24h em emergencia); **608** (CDC em coletivos empresariais).
+**Sumulas STJ:** ⛔ **469** — CANCELADA (11/04/2018), NAO CITAR; **597** (CDC em plano/odonto — carencia abusiva > 24h em emergencia); **608** — CDC aplica-se aos planos de saude, SALVO os administrados por entidades de autogestao.
 
 **Temas STJ (atualizar pos-Lei 14.454):**
 - **Tema 990** — pos-Lei 14.454/2022 — Rol exemplificativo, com criterios objetivos para cobertura fora do Rol
@@ -44,36 +44,36 @@ Acao do paciente/beneficiario contra operadora por negativa de tratamento oncolo
 - Tema 952 — reajuste por faixa etaria
 - **REsp 1.733.013/PR** (OPME), **REsp 1.846.502/SP** (off-label oncologico) `[VERIFICAR jurisprudencia mais recente]`
 
-## 3. Criterios pos-Lei 14.454/2022 art. 10§13 (corecao da peca)
+## 3. ADI 7265/STF — o teste que controla a cobertura fora do Rol (corecao da peca)
 
-Cobertura **fora do Rol** deve ser concedida quando comprovada:
+**ADI 7265/DF (STF, Pleno, j. 18/09/2025, vinculante).** O art. 10§13 da Lei 9.656 usa "ou", mas o STF fixou tese que a cobertura fora do Rol ANS exige os 5 requisitos **CUMULATIVOS** abaixo — onus da prova de quem pede (CPC 373). Sem Rol, via de regra NAO ha concessao judicial, salvo os 5 provados:
 
-1. **Eficacia comprovada cientificamente** — estudos clinicos publicados em revistas indexadas, parecer da SBOC/sociedade de especialidade, diretrizes (NICE, NCCN, ESMO)
-2. **Recomendacao por orgao tecnico** — CONITEC, comissoes oncologicas estaduais, ou
-3. **Aprovacao por orgao regulador internacional** — FDA, EMA, PMDA, Health Canada
-4. **Bula** — uso registrado em pais de origem (off-label aceito se literatura sustenta)
-5. **Ausencia de substituto eficaz no Rol** — esgotamento das alternativas previstas
+1. **Prescricao habilitada** — medico ou odontologo assistente
+2. **Sem obice da ANS** — ausencia de negativa expressa OU de pendencia de analise em PAR (proposta de atualizacao do Rol)
+3. **Ausencia de alternativa no Rol** — nada equivalente cobre a condicao do paciente
+4. **Evidencia de alto nivel** — ensaio clinico randomizado + revisao sistematica/meta-analise, OU Avaliacao de Tecnologia em Saude (ATS)
+5. **Registro na Anvisa**
 
-**Estrategia:** sempre demonstrar TODOS os 5 — quanto mais demonstrados, mais robusta a tese.
+**Estrategia:** provar OS 5 — peca que so cita "Lei 14.454 tornou o Rol exemplificativo" sem enfrentar a ADI 7265 entrega o flanco a operadora, que hoje redige a defesa em cima exatamente desta tese.
 
 ## 4. Tipos de negativa e teses correspondentes
 
 | Negativa | Tese juridica |
 |----------|---------------|
-| **"Fora do Rol ANS"** | Lei 14.454/2022 — Rol exemplificativo + criterios 1-5 demonstrados |
+| **"Fora do Rol ANS"** | Lei 14.454/2022 — Rol exemplificativo + os 5 requisitos cumulativos da ADI 7265 |
 | **"Off-label"** | Eficacia cientifica (NCCN/ESMO) + indicacao oncologica analoga + ausencia substituto |
 | **"Alto custo"** | Tema 1.069 STJ + Lei 9.656 art. 10 — operadora nao pode recusar por valor |
 | **"Carencia"** | Lei 9.656 art. 12 V "c" — emergencia oncologica 24h; URGENCIA |
 | **"Pre-existencia"** | Lei 9.656 art. 11 — CPT 24 meses limitado; oncologia em curso = continuidade |
 | **"Procedimento experimental"** | Distinguir experimental (nao registrado) de off-label (registrado, uso analogo) |
-| **Glosa de medicamento de uso domiciliar** | Sum. 469 + tratamento conexo a quimio (antiemetico, hematopoietico) |
+| **Glosa de medicamento de uso domiciliar** | Sum. 608 + tratamento conexo a quimio (antiemetico, hematopoietico) |
 | **Negativa de PET-CT/exame diagnostico** | Necessidade tecnica + diretriz SBOC |
 | **Negativa de transplante** | Lei 9.434/1997 + protocolo SUS de prioridade `[VERIFICAR]` |
 | **Negativa de CAR-T / terapia avancada** | Lei 14.454 + parecer SBOC + aprovacao internacional |
 
 ## 5. Tutela de urgencia (CPC 300) — coracao da peca
 
-**Probabilidade do direito (fumus):** Lei 14.454 + Sum. 469/608 + Tema 990 pos-lei + parecer medico assistente + comprovacao dos 5 criterios.
+**Probabilidade do direito (fumus):** Lei 14.454 + Sum. 608 + Tema 990 pos-lei + ADI 7265 + parecer medico assistente + comprovacao dos 5 requisitos.
 
 **Perigo de dano (periculum):** oncologia e tempo-dependente — atraso reduz chance de cura/sobrevida (`perda-de-uma-chance` aplicavel). Documentar: estadio do tumor; janela terapeutica; literatura sobre impacto do atraso.
 
@@ -105,15 +105,15 @@ I — FATOS — diagnostico em [data]; prescricao em [data]; negativa em [data]
 II — ISSUE — negativa de [tratamento X] viola Lei 9.656 + Lei 14.454/2022?
 
 III — DIREITO
-  III.1 Regime — CDC art. 14 (objetiva — PA-15) + Sum. 469 STJ (PA-13)
-  III.2 Lei 14.454/2022 art. 10§13 — Rol exemplificativo
-  III.3 Criterios atendidos (PA-13):
-        - Eficacia cientifica: [estudos + NCCN/ESMO + parecer SBOC]
-        - Recomendacao tecnica: [CONITEC/sociedade]
-        - Aprovacao internacional: [FDA/EMA]
-        - Bula: [registro/indicacao analoga]
-        - Ausencia de substituto eficaz no Rol
-  III.4 Inversao do onus — CDC 6o VIII + Sum. 469 STJ (PA-14 fundamentado)
+  III.1 Regime — CDC art. 14 (objetiva — PA-15) + Sum. 608 STJ (PA-13)
+  III.2 Lei 14.454/2022 art. 10§13 + ADI 7265/STF (Pleno, vinculante) — Rol exemplificativo
+  III.3 Requisitos cumulativos ADI 7265 (PA-13):
+        - Prescricao habilitada: [medico/odontologo assistente]
+        - Sem obice ANS: [sem negativa expressa / sem pendencia PAR]
+        - Ausencia de alternativa no Rol
+        - Evidencia de alto nivel: [ensaio randomizado + revisao sistematica/meta-analise, ou ATS]
+        - Registro Anvisa: [numero]
+  III.4 Inversao do onus — CDC 6o VIII + Sum. 608 STJ (PA-14 fundamentado)
   III.5 Tutela de urgencia — CPC 300 (probabilidade + perigo tempo-dependente)
   III.6 [Estatuto Idoso / LBI se aplicavel]
 
@@ -160,7 +160,7 @@ RESSALVA (PA-05).
 - **PA-10** — Tema 990 **pos-Lei 14.454** — citar como Rol **exemplificativo** (nao taxativo).
 - **PA-11** — Rol ANS em atualizacao -> `[VERIFICAR RN vigente]`.
 - **PA-13** — Lei 9.656 + Lei 14.454 + CDC com identificacao precisa.
-- **PA-14** — inversao do onus fundamentada (CDC 6o VIII + Sum. 469).
+- **PA-14** — inversao do onus fundamentada (CDC 6o VIII + Sum. 608).
 - **PA-21** — quantum conservador.
 
 ## 11. Protocolos acionados

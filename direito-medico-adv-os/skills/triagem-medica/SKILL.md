@@ -24,7 +24,7 @@ Acionada por `/triagem`, `/caso-medico` (abertura), pelo `medico-master` em prom
 
 | Dimensao | Valores | Implicacao tecnica |
 |----------|---------|--------------------|
-| **Sujeito** | profissional-PF (medico/dentista/enf/fisio) · clinica-PJ · hospital-PJ · paciente/beneficiario · operadora-PJ | Profissional PF -> CC art. 951 subjetiva; PJ -> CDC art. 14 objetiva (Sum. 469 STJ); paciente -> autor em Tier 2/5; operadora -> consultivo Tier 6 ou re em Tier 5 |
+| **Sujeito** | profissional-PF (medico/dentista/enf/fisio) · clinica-PJ · hospital-PJ · paciente/beneficiario · operadora-PJ | Profissional PF -> CC art. 951 subjetiva; PJ -> CDC art. 14 objetiva (Sum. 608 STJ); paciente -> autor em Tier 2/5; operadora -> consultivo Tier 6 ou re em Tier 5 |
 | **Modo** | consultivo · contencioso | Consultivo -> Tier 6 (sociedade, contrato, credenciamento, LGPD, publicidade); contencioso -> Tier 2-5 |
 | **Esfera** | civel · criminal · etico-disciplinar (CRM/CRO) · regulatorio (ANS/ANVISA) | 1+ simultaneamente -> P4 Cruzamento (CC art. 935 + independencia relativa, PA-12) |
 | **Subdominio** | medicina (CFM) · odontologia (CFO) · saude mental (Lei 10.216 + 13.840) · reproducao (Res. CFM 2.320/2022) · outros (COFEN 564/2017 · COFFITO 424/2013 · CFF) | Define normativa profissional + HOF interconselhos (Res. CFM 2.337/2023) |

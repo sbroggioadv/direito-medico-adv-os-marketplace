@@ -29,16 +29,16 @@ Acao do beneficiario contra (a) **rescisao unilateral** do contrato coletivo (em
 | **RN ANS 412/2016** | Portabilidade especial em rescisao unilateral `[VERIFICAR atual]` |
 | RN ANS 195/2009 + 309/2012 | Reajuste coletivo |
 | CDC art. 6o III/VIII + 14 + 47 + 51 | Direitos consumeristas |
-| **Sum. 608 STJ** | CDC em coletivos empresariais/adesao |
+| **Sum. 608 STJ** | CDC aplica-se a planos de saude (inclusive coletivos empresariais/adesao), salvo autogestao |
 | CDC art. 27 | Prescricao 5a |
 | Lei 10.741/2003 / Lei 13.146/2015 | Protecoes especiais |
 | CPC 300 / 537 | Tutela + astreintes |
 
 **Jurisprudencia:**
 - **STJ Tema 1.082** — rescisao coletivo exige (a) aviso previo 60d; (b) **manutencao do beneficiario em tratamento medico em curso de doenca grave** ate completar 12 meses ou tratamento concluir
-- STJ Sum. 608 (CDC em coletivos)
+- STJ Sum. 608 (CDC aplica-se a planos, salvo autogestao)
 - STJ AgInt REsp 1.876.543 (manutencao em transplante / quimioterapia)
-- STJ Sum. 469 (CDC em planos)
+- ⛔ Sum. 469 — CANCELADA (11/04/2018); NAO CITAR
 - TJSP / TJRJ — tutela quase sempre concedida em doenca grave
 
 ## 3. Tema 1.082 STJ (coracao da peca)

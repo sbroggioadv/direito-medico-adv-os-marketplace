@@ -1,7 +1,7 @@
 ---
 name: tutela-urgencia-plano-saude
 description: >
-  Modelo unificado de tutela de urgencia em acoes contra operadora de plano de saude — paciente que precisa de cobertura imediata (oncologico, home care, OPME, TEA, rescisao em tratamento, exame critico, internacao, cirurgia). Aplica CPC art. 300 (tutela de urgencia — probabilidade + periculum) + CPC art. 537 (astreintes proporcionais — STJ EAREsp 650.536 + Tema 1.094/1.095) + CPC art. 854 (SISBAJUD em descumprimento) + Sum. 469/608 STJ + Lei 14.454/2022. Articula 3 pilares: probabilidade do direito (Lei 9.656 + jurisprudencia consolidada por subtipo); perigo de dano (tempo-critico, irreparabilidade); proporcionalidade (sem excesso). Mecanismos pos-deferimento: astreintes + intimacao com prazo curto + bloqueio SISBAJUD + envio direto a hospital/clinica. Conservadorismo (PA-21) em astreintes (limite e teto). Aciona: tutela urgencia plano de saude, antecipacao tutela, CPC 300, astreintes plano, SISBAJUD, EAREsp 650.536, bloqueio operadora, multa diaria plano, modelo tutela, urgencia oncologica.
+  Modelo unificado de tutela de urgencia em acoes contra operadora de plano de saude — paciente que precisa de cobertura imediata (oncologico, home care, OPME, TEA, rescisao em tratamento, exame critico, internacao, cirurgia). Aplica CPC art. 300 (tutela de urgencia — probabilidade + periculum) + CPC art. 537 (astreintes proporcionais — STJ EAREsp 650.536 + Tema 1.094/1.095) + CPC art. 854 (SISBAJUD) + ADI 7265/STF (fora do Rol) + Sum. 608 STJ + Lei 14.454/2022. Articula 3 pilares: probabilidade do direito (Lei 9.656 + jurisprudencia consolidada por subtipo); perigo de dano (tempo-critico, irreparabilidade); proporcionalidade (sem excesso). Mecanismos pos-deferimento: astreintes + intimacao com prazo curto + bloqueio SISBAJUD + envio direto a hospital/clinica. Conservadorismo (PA-21) em astreintes (limite e teto). Aciona: tutela urgencia plano de saude, antecipacao tutela, CPC 300, astreintes plano, SISBAJUD, EAREsp 650.536, bloqueio operadora, multa diaria plano, modelo tutela, urgencia oncologica.
 ---
 
 # TUTELA DE URGENCIA — PLANO DE SAUDE (MODELO UNIFICADO)
@@ -34,7 +34,8 @@ Pacote tecnico reutilizavel de **tutela de urgencia + astreintes + execucao** pa
 | CDC art. 84 (correspondente CPC 497) | Tutela especifica em obrigacao de fazer |
 | **STJ EAREsp 650.536** | **Astreintes proporcionais — sem desvio de finalidade; teto razoavel** |
 | **STJ Tema 1.094/1.095** | Limite a revisao em recurso especial — sentinela de razoabilidade |
-| Sum. 469 / 608 STJ | CDC em planos / coletivos |
+| Sum. 608 STJ | CDC aplica-se a planos de saude, salvo autogestao |
+| **STF ADI 7265/DF** (Pleno, j. 18/09/2025, vinculante) | Fora do Rol: 5 requisitos cumulativos (art. 10§13 Lei 9.656), onus de quem pede (CPC 373) |
 
 ## 3. Tres pilares da tutela
 
@@ -48,7 +49,7 @@ Pacote tecnico reutilizavel de **tutela de urgencia + astreintes + execucao** pa
 
 | Subtipo | Probabilidade base |
 |---------|-------------------|
-| Oncologica + Lei 14.454/Tema 990 + criterios 5 | Alta |
+| Oncologica + Lei 14.454/Tema 990 + ADI 7265 (5 requisitos provados) | Alta |
 | Home care + AgInt AREsp 1.232.473 | Media-Alta (depende dos 5 criterios) |
 | OPME + REsp 1.733.013 + prescricao fundamentada | Alta |
 | TEA + Lei 12.764 + LBI + RN 539 | Alta |

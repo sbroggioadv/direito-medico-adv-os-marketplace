@@ -84,7 +84,7 @@ Tres pilares:
 2. **Ausencia de fotografia pre** — impossibilidade de demonstrar resultado esperado x alcancado.
 3. **Lacuna no seguimento** — falta de consultas pos-operatorias, falta de registro de orientacoes.
 4. **Resultado claramente alheio** (assimetria grosseira, queloide previsivel, infeccao por falha de antissepsia).
-5. **Inversao de onus (CDC art. 6o VIII + Sum. 469 STJ em clinica/hospital PJ; CPC art. 373 §1o em medico PF).**
+5. **Inversao de onus (CDC art. 6o VIII + Sum. 608 STJ em clinica/hospital PJ; CPC art. 373 §1o em medico PF).**
 
 ## 7. Memoria de quantum (P3)
 
@@ -105,7 +105,7 @@ Tres pilares:
 III — DIREITO
 III.1 — Cirurgia estetica = obrigacao de RESULTADO (STJ REsp 1.526.466/RS)
 III.2 — Inversao da presuncao — medico/clinica prova excludente
-III.3 — Re Y (clinica/hospital) — CDC art. 14 + Sum. 469 STJ
+III.3 — Re Y (clinica/hospital) — CDC art. 14 + Sum. 608 STJ
        Re X (medico PF) — CC art. 951 + REsp 1.526.466 (regime de resultado
        transcende a regra geral subjetiva do CDC art. 14 §4o)
 III.4 — Tese de defesa (se for o caso): excludente comprovada — descumprimento

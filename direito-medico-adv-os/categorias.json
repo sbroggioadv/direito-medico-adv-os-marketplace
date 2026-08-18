@@ -1,0 +1,55 @@
+{
+  "🎯 Orquestracao & Onboarding": [
+    "medico-master",
+    "onboarding-medico",
+    "validador-legislacao-vigente"
+  ],
+  "🔍 Triagem & Analise Documental": [
+    "triagem-medica",
+    "analise-prontuario-medico",
+    "analise-tcle",
+    "analise-pericia-medica",
+    "timeline-multiesfera"
+  ],
+  "⚖️ Responsabilidade Civil Medica": [
+    "responsabilidade-civil-medica",
+    "tcle-especialidades",
+    "perda-de-uma-chance",
+    "cirurgia-estetica-resultado",
+    "responsabilidade-odontologica",
+    "prescricao-erro-medico"
+  ],
+  "🛡️ Defesa Criminal do Profissional": [
+    "defesa-culpa-medica-criminal",
+    "omissao-de-socorro-medico",
+    "violacao-sigilo-medico",
+    "falsidade-atestado-prontuario"
+  ],
+  "🏛️ Processo Etico-Disciplinar (CRM/CRO)": [
+    "defesa-ped-crm",
+    "defesa-ped-cro",
+    "ms-contra-cassacao-conselho",
+    "suspensao-preventiva-conselho"
+  ],
+  "💊 Acoes contra Plano de Saude": [
+    "acao-negativa-cobertura-oncologica",
+    "acao-home-care",
+    "acao-opme",
+    "acao-tea-multidisciplinar",
+    "acao-reajuste-abusivo",
+    "acao-rescisao-coletivo",
+    "tutela-urgencia-plano-saude"
+  ],
+  "🏢 Consultivo Empresarial em Saude": [
+    "constituicao-sociedade-medica",
+    "contrato-prestacao-medica",
+    "credenciamento-plano-saude",
+    "lgpd-saude",
+    "compliance-publicidade-medica"
+  ],
+  "🔄 Transversais (Governanca & Qualidade)": [
+    "revisao-final-medica",
+    "estilo-entrega-medica",
+    "memoria-de-caso-medico"
+  ]
+}

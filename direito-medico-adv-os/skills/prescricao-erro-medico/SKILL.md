@@ -46,10 +46,10 @@ Acionada em toda peca civel envolvendo prazo (petic. inicial, contestacao, parec
 | Demandado (sujeito) | Relacao | Prazo | Base legal | Termo inicial |
 |---------------------|---------|-------|-----------|---------------|
 | Medico PF autonomo | NAO consumerista | **3 anos** | CC art. 206 §3o V | Ciencia inequivoca do dano (Sum. 278) |
-| Medico PF autonomo | CONSUMERISTA (atendimento via clinica/hospital como prestador) | **5 anos** | CDC art. 27 + Sum. 469 + REsp 1.708.628 (analogia) | Mesmo |
+| Medico PF autonomo | CONSUMERISTA (atendimento via clinica/hospital como prestador) | **5 anos** | CDC art. 27 + Sum. 608 + REsp 1.708.628 (analogia) | Mesmo |
 | Hospital privado (relacao consumerista) | CONSUMERISTA | **5 anos** | CDC art. 27 + REsp 1.708.628/RS | Mesmo |
-| Clinica/consultorio PJ | CONSUMERISTA | **5 anos** | CDC art. 27 + Sum. 469 | Mesmo |
-| Operadora de plano | CONSUMERISTA | **5 anos** | CDC art. 27 + Sum. 469 | Mesmo |
+| Clinica/consultorio PJ | CONSUMERISTA | **5 anos** | CDC art. 27 + Sum. 608 | Mesmo |
+| Operadora de plano | CONSUMERISTA | **5 anos** | CDC art. 27 + Sum. 608 | Mesmo |
 | Autogestao (Geap, Cassi) | NAO consumerista (Sum. 608) | **3 anos** | CC art. 206 §3o V | Mesmo |
 | SUS / hospital publico | Adm. publica (CF art. 37 §6o) | **5 anos** | DL 20.910/1932 art. 1o | Mesmo |
 | Acao regressiva (medico responde a hospital condenado) | Civil | 3 anos | CC art. 206 §3o V | Pagamento da condenacao |
@@ -105,7 +105,7 @@ Demandados: <lista por sujeito>
 - Sujeito 1 (<nome>): <medico PF / clinica PJ / hospital PJ / operadora>
   Relacao: <consumerista / nao consumerista>
   Prazo: <3 anos CC art. 206 §3o V / 5 anos CDC art. 27>
-  Fundamento: <Sum. 469 STJ / REsp 1.708.628/RS / Sum. 608 STJ>
+  Fundamento: <Sum. 608 STJ / REsp 1.708.628/RS>
 - Sujeito 2: [...]
 
 ## Calculo

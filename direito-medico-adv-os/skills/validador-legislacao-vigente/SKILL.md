@@ -1,7 +1,7 @@
 ---
 name: validador-legislacao-vigente
 description: >
-  Protocolo 1 do plugin. Valida vigencia normativa nos 4 niveis (federal + conselho profissional CFM/CFO + regulador ANS/ANVISA + estadual/municipal) e a jurisprudencia STJ/STF/TRFs (Sumulas e Temas repetitivos) no ANO DO FATO GERADOR. Emite o Selo de Validacao Legal Previa — pre-requisito absoluto de toda peca, parecer, contrato, defesa e calculo de quantum. Cobre a reforma 2022-2026: Lei 14.510/2022 (telemedicina), Lei 14.454/2022 (Rol ANS exemplificativo), Lei 15.378/2026 (Estatuto do Paciente), Res. CFM 2.336/2023 (publicidade), Res. CFM 2.337/2023 (HOF), Res. CFM 2.320/2022 (reproducao). Marca [VERIFICAR] em alvo movel (Rol ANS, RN, prazos locais, sumula em revisao). Aciona: validar legislacao, lei vigente, a norma ainda vale, datar fato gerador, qual regime se aplica, reforma medica, Lei 14.454, Tema 990 STJ, Sum. 469/597/608 STJ, Res. CFM, Res. CFO, RDC ANVISA, RN ANS, emitir o Selo.
+  Protocolo 1 do plugin. Valida vigencia normativa nos 4 niveis (federal + conselho profissional CFM/CFO + regulador ANS/ANVISA + estadual/municipal) e a jurisprudencia STJ/STF/TRFs (Sumulas e Temas repetitivos) no ANO DO FATO GERADOR. Emite o Selo de Validacao Legal Previa — pre-requisito absoluto de toda peca, parecer, contrato, defesa e calculo de quantum. Cobre a reforma 2022-2026: Lei 14.510/2022 (telemedicina), Lei 14.454/2022 (Rol ANS exemplificativo), Lei 15.378/2026 (Estatuto do Paciente), Res. CFM 2.336/2023 (publicidade), Res. CFM 2.337/2023 (HOF), Res. CFM 2.320/2022 (reproducao). Marca [VERIFICAR] em alvo movel (Rol ANS, RN, prazos locais, sumula em revisao). Aciona: validar legislacao, lei vigente, a norma ainda vale, datar fato gerador, qual regime se aplica, reforma medica, Lei 14.454, Tema 990 STJ, ADI 7265 STF, Sum. 469 (cancelada)/597/608 STJ, Res. CFM, Res. CFO, RDC ANVISA, RN ANS, emitir o Selo.
 ---
 
 # VALIDADOR DE LEGISLACAO VIGENTE
@@ -24,7 +24,7 @@ Acionada por `medico-master` antes de toda producao, ou diretamente pelo operado
 
 O direito medico muda em duas dimensoes simultaneas:
 
-- **Eixo temporal** — reforma legislativa 2022-2026: Lei 14.510/2022 (telemedicina), Lei 14.454/2022 (Rol ANS exemplificativo — afeta Tema 990 STJ), Res. CFM 2.314/2022 (telemedicina), Res. CFM 2.320/2022 (reproducao), Res. CFM 2.336/2023 (publicidade), Res. CFM 2.337/2023 (HOF — conflito CFM x CFO), Lei 15.378/2026 (Estatuto do Paciente). A norma aplicavel e a vigente **no ano do fato gerador** (PA-09).
+- **Eixo temporal** — reforma legislativa 2022-2026 (inventario completo no Passo 2). A norma aplicavel e a vigente **no ano do fato gerador** (PA-09).
 - **Eixo geografico** — foro federal (MS contra conselho — Sum. 105 STJ + CF art. 109 I), estadual (civel/criminal — CDC art. 101 I; CPP art. 70), municipal (vigilancia sanitaria local), administrativo (CRM/CRO da UF de inscricao — Res. CFM 2.145/2016 + Res. CFO 71/2006). Estatutos regionais complementam.
 
 ## 3. Os 8 passos do Protocolo 1
@@ -43,9 +43,9 @@ Para cada norma: publicacao (DOU), vacatio legis, vigencia efetiva, revogacao ex
 
 ### Passo 4 — Validar jurisprudencia STJ/STF/TRFs/Conselho
 **Sumulas vivas em 2026** (verificar status `[VERIFICAR — revisao]`):
-- Sum. 469 STJ — CDC aplica a planos.
-- Sum. 597 STJ — CDC odontologia (subjetiva CD); CDC nao aplica autogestao; carencia abusiva > 24h em urgencia.
-- Sum. 608 STJ — CDC aplica a coletivos (nao autogestao).
+- ⛔ Sum. 469 STJ — **CANCELADA em 11/04/2018**. NAO CITAR como vigente; a materia (CDC em plano de saude) e hoje regida pela Sum. 608.
+- Sum. 597 STJ — CDC odontologia (subjetiva CD); carencia abusiva > 24h em urgencia/emergencia.
+- Sum. 608 STJ — aplica-se o CDC aos contratos de plano de saude, **SALVO os administrados por entidades de autogestao**.
 - Sum. 105 STJ — MS contra ato de conselho profissional (autarquia federal) -> JF.
 - Sum. 387 STJ — cumulacao dano moral + estetico.
 - Sum. 326 STJ — quantum/sucumbencia reciproca.
@@ -55,7 +55,7 @@ Para cada norma: publicacao (DOU), vacatio legis, vigencia efetiva, revogacao ex
 
 **Tema 990 STJ** (rol ANS taxativo mitigado) — **alterado pela Lei 14.454/2022**: pre-lei usa redacao anterior; pos-lei aplica rol exemplificativo. Status `[VERIFICAR — afetacao 2026]`.
 
-**STF:** RE 855.178 (responsabilidade solidaria dos entes na saude publica), Tema 793 (alto custo SUS), RE 958.252 (terceirizacao/pejotizacao — repercussao geral).
+**STF:** RE 855.178 (responsabilidade solidaria dos entes na saude publica), Tema 793 (alto custo SUS), RE 958.252 (terceirizacao/pejotizacao — repercussao geral). **ADI 7265/DF (Pleno, j. 18/09/2025, vinculante)** — fora do Rol ANS, cobertura so com 5 requisitos CUMULATIVOS (art. 10§13 Lei 9.656): (i) prescricao habilitada; (ii) sem negativa/pendencia PAR-ANS; (iii) sem alternativa no Rol; (iv) evidencia de alto nivel (ensaio randomizado + revisao sistematica/meta-analise) ou ATS; (v) registro Anvisa — onus de quem pede (CPC 373). Sem Rol, via de regra NAO ha concessao judicial.
 
 ### Passo 5 — Travar o regime aplicavel
 Distinguir o regime do ano:
@@ -73,7 +73,7 @@ Distinguir o regime do ano:
 Estatuto do CRM/CRO regional pode complementar Res. CFM/CFO em prazos administrativos do PED. Regulamento local de vigilancia sanitaria (RDC complementada por norma estadual/municipal). Sem confirmacao da regra local -> `[VERIFICAR — estatuto CRM-UF / vigilancia municipal / norma estadual]` (PA-11).
 
 ### Passo 7 — Rastrear PL/MP/ADIN pendente
-Verificar PL em tramitacao, ADIN/ADC ajuizada que pode alterar o cenario (ex.: contestacao da Lei 14.454/2022 por operadoras, debates sobre Lei 15.378/2026 e DAV, RN ANS em consulta publica). Sinalizar.
+Verificar PL/ADIN/ADC que possa alterar o cenario (ex.: debates sobre Lei 15.378/2026 e DAV, RN ANS em consulta publica). ADI 7265/DF (Rol ANS) ja julgada — ver Passo 4. Sinalizar.
 
 ### Passo 8 — Emitir o Selo
 Ao final, emitir o Selo formal.
@@ -115,7 +115,7 @@ Nunca prosseguir com norma REVOGADA sem confirmacao expressa do operador.
 
 ## 6. Casos transitorios criticos (alvo movel)
 
-- **Pre vs pos Lei 14.454/2022** — Tema 990 STJ: pre-lei usa rol como referencia obrigatoria com excecoes restritas; pos-lei aplica rol exemplificativo + criterios (eficacia comprovada, recomendacao oficial, evidencia cientifica).
+- **Pre vs pos Lei 14.454/2022** — Tema 990 STJ: pre-lei rol taxativo mitigado; pos-lei rol exemplificativo + os 5 requisitos da ADI 7265 (Passo 4).
 - **Telemedicina** — pre-Lei 14.510/2022: Res. CFM 1.643/2002 (transitoria); pos-Lei + Res. CFM 2.314/2022: moldura estavel.
 - **DAV** — pre-Lei 15.378/2026: Res. CFM 1.995/2012 (administrativa); pos-lei: status legal expresso.
 - **HOF — Res. CFM 2.337/2023** — conflito CFM x CFO ativo: pre-Res. regime CFO autonomo; pos-Res. demanda triagem do sujeito (medico x CD) e do procedimento.

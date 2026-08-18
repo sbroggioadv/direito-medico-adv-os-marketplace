@@ -1,7 +1,7 @@
 ---
 name: responsabilidade-civil-medica
 description: >
-  Nucleo civel do plugin — responsabilidade civil em erro medico/odontologico. Distincao critica subjetiva x objetiva (PA-15): medico PF autonomo CC art. 951 (subjetiva — provar culpa) vs clinica/hospital/operadora PJ CDC art. 14 (objetiva — basta nexo+dano). Aplica STJ Sum. 469 (CDC em planos), Sum. 608 (coletivos), Sum. 597 (odonto), Sum. 387 (cumulacao moral+estetico), Sum. 326 (sucumbencia). Inversao do onus CDC art. 6o VIII / Sum. 469 STJ vs distribuicao dinamica CC art. 373 §1o. Memoria de quantum (CC arts. 948-950 + parametros STJ por especialidade) conservadora (PA-21). Aciona: erro medico, responsabilidade civil medica, indenizacao por dano medico, danos morais medicos, danos materiais medicos, pensao por morte medica, REsp 1.708.628, Sumula 469 STJ, CDC art. 14, CC art. 951, inversao do onus, peticao inicial erro medico, contestacao erro medico.
+  Nucleo civel do plugin — responsabilidade civil em erro medico/odontologico. Distincao critica subjetiva x objetiva (PA-15): medico PF autonomo CC art. 951 (subjetiva — provar culpa) vs clinica/hospital/operadora PJ CDC art. 14 (objetiva — basta nexo+dano). Aplica STJ Sum. 608 (CDC aplica-se a planos, salvo autogestao), Sum. 597 (odonto/carencia), Sum. 387 (cumulacao moral+estetico), Sum. 326 (sucumbencia). Inversao do onus CDC art. 6o VIII / Sum. 608 STJ vs distribuicao dinamica CC art. 373 §1o. Memoria de quantum (CC arts. 948-950 + parametros STJ por especialidade) conservadora (PA-21). Aciona: erro medico, responsabilidade civil medica, indenizacao por dano medico, danos morais medicos, danos materiais medicos, pensao por morte medica, REsp 1.708.628, Sumula 608 STJ, CDC art. 14, CC art. 951, inversao do onus, peticao inicial erro medico, contestacao erro medico.
 ---
 
 # RESPONSABILIDADE CIVIL MEDICA
@@ -33,7 +33,7 @@ Acionada em demanda civel — peticao inicial do paciente, contestacao do medico
 | CDC art. 6o VIII / 27 | Inversao do onus / prescricao 5 anos |
 | CPC art. 373 §1o | Distribuicao dinamica (regime CC) |
 
-**Sumulas STJ:** 469 (CDC em planos); 597 (CDC nao em autogestao; carencia > 24h emergencia; odonto CDC); 608 (CDC em coletivos); 387 (cumulacao moral+estetico); 326 (sucumbencia — quantum inferior nao gera reciproca); 278 (actio nata — ciencia inequivoca); 54 (juros desde evento extracontratual); 362 (correcao do moral desde a fixacao).
+**Sumulas STJ:** ⛔ 469 — CANCELADA (11/04/2018), NAO CITAR; 608 (CDC aplica-se aos planos de saude, SALVO os administrados por entidades de autogestao); 597 (CDC odonto; carencia abusiva > 24h emergencia); 387 (cumulacao moral+estetico); 326 (sucumbencia — quantum inferior nao gera reciproca); 278 (actio nata — ciencia inequivoca); 54 (juros desde evento extracontratual); 362 (correcao do moral desde a fixacao).
 
 **REsp paradigma:** 1.708.628/RS (hospital privado obj. + medico autonomo subj. — distincao); 1.526.466/RS (estetica = resultado); 1.291.247/RS (perda de chance); EREsp 1.385.732 (prescricao consumerista x CC).
 
@@ -43,7 +43,7 @@ Acionada em demanda civel — peticao inicial do paciente, contestacao do medico
 |---------|--------|-------|-----------------|
 | Medico PF autonomo | **Subjetiva** | CC art. 951 + CDC art. 14 §4o | Autor prova: conduta + culpa (negligencia, imprudencia, impericia) + nexo + dano |
 | Clinica/hospital PJ | **Objetiva** (relacao consumerista) | CDC art. 14 | Autor prova: nexo + dano. Re prova excludente (caso fortuito, culpa exclusiva do consumidor, fato de terceiro) |
-| Operadora de plano | **Objetiva** | CDC art. 14 + Sum. 469 | Idem |
+| Operadora de plano | **Objetiva** | CDC art. 14 + Sum. 608 | Idem |
 | Autogestao (Geap, Cassi, etc.) | NAO consumerista (Sum. 608) | CC art. 927 + 951 | Autor prova culpa |
 | Hospital publico/SUS | Objetiva (CF art. 37 §6o — Estado) | CF art. 37 §6o | Idem objetiva |
 | SUS — entes federados | Responsabilidade solidaria | STF RE 855.178 | Acao contra qualquer ente |
@@ -54,7 +54,7 @@ Acionada em demanda civel — peticao inicial do paciente, contestacao do medico
 
 | Regime | Base legal | Pressupostos |
 |--------|-----------|--------------|
-| **Inversao CDC** | CDC art. 6o VIII + Sum. 469 STJ | Relacao de consumo + verossimilhanca OU hipossuficiencia do consumidor |
+| **Inversao CDC** | CDC art. 6o VIII + Sum. 608 STJ | Relacao de consumo + verossimilhanca OU hipossuficiencia do consumidor |
 | **Distribuicao dinamica CPC** | CPC art. 373 §1o | Caso concreto sem relacao consumerista — onus a quem melhor possa produzir (clinica vs paciente) |
 
 **Aplicacao pratica:** medico PF autonomo em relacao **nao-consumerista** -> CC art. 373 §1o (distribuicao dinamica). Clinica/hospital/operadora -> inversao CDC art. 6o VIII. **Fundamentar sempre** — inversao automatica nao existe; depende de pedido fundamentado.
@@ -90,9 +90,9 @@ EXMO. SR. JUIZ DE DIREITO DA ___ VARA CIVEL DE [Cidade/UF]
 I — FATOS [F] — narrativa cronologica datada do evento (referencia CASO.md)
 II — ISSUE [I] — houve erro do Re X (CC art. 951) e falha do Re Y (CDC art. 14)?
 III — DIREITO [R]
-  III.1 Regime (PA-15): Re Y objetiva CDC art. 14 + Sum. 469 STJ + REsp 1.708.628;
+  III.1 Regime (PA-15): Re Y objetiva CDC art. 14 + Sum. 608 STJ + REsp 1.708.628;
         Re X subjetiva CC art. 951 + CDC art. 14 §4o
-  III.2 Inversao do onus (PA-14): Re Y -> CDC art. 6o VIII + Sum. 469;
+  III.2 Inversao do onus (PA-14): Re Y -> CDC art. 6o VIII + Sum. 608;
         Re X -> CPC art. 373 §1o (distribuicao dinamica fundamentada)
   III.3 Conduta culposa do Re X — negligencia/imprudencia/impericia
         (posicao juridica, NAO clinica — PA-03; conduta tecnica e do perito)

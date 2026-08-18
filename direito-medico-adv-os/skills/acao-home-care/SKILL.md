@@ -1,7 +1,7 @@
 ---
 name: acao-home-care
 description: >
-  Acao contra operadora por negativa de internacao domiciliar (home care) — paciente que substitui internacao hospitalar por atendimento em residencia com equipe multidisciplinar (medico, enfermagem 12/24h, fisioterapia, fonoaudiologia, nutricao, equipamentos). Aplica Lei 9.656/1998 + Lei 14.454/2022 (Rol exemplificativo) + STJ AgInt no AREsp 1.232.473 (criterios de cobertura: necessidade tecnica + custo equivalente ou inferior + parecer medico + estabilidade clinica) + Sum. 469 STJ + RN ANS 211/2010 (cuidados domiciliares — equivalencia funcional) `[VERIFICAR atual]`. Tutela de urgencia CPC 300 — gravidade clinica + tempo. Distingue home care **propriamente dito** (internacao domiciliar) de cuidador domiciliar e visitas domiciliares avulsas. Aciona: home care, internacao domiciliar, negativa home care, AgInt AREsp 1.232.473, cuidador, ventilacao mecanica domiciliar, alimentacao enteral PEG, paciente acamado, idoso plano de saude, equipe multidisciplinar.
+  Acao contra operadora por negativa de internacao domiciliar (home care) — paciente que substitui internacao hospitalar por atendimento em residencia com equipe multidisciplinar (medico, enfermagem 12/24h, fisioterapia, fonoaudiologia, nutricao, equipamentos). Aplica Lei 9.656/1998 + Lei 14.454/2022 (Rol exemplificativo) + STJ AgInt no AREsp 1.232.473 (criterios de cobertura: necessidade tecnica + custo equivalente ou inferior + parecer medico + estabilidade clinica) + ADI 7265/STF (fora do Rol) + Sum. 608 STJ + RN ANS 211/2010 (cuidados domiciliares — equivalencia funcional) `[VERIFICAR atual]`. Tutela de urgencia CPC 300 — gravidade clinica + tempo. Distingue home care **propriamente dito** (internacao domiciliar) de cuidador domiciliar e visitas domiciliares avulsas. Aciona: home care, internacao domiciliar, negativa home care, AgInt AREsp 1.232.473, ADI 7265, cuidador, ventilacao mecanica domiciliar, alimentacao enteral PEG, paciente acamado, idoso plano de saude, equipe multidisciplinar.
 ---
 
 # ACAO DE HOME CARE
@@ -37,7 +37,8 @@ Acao do paciente contra operadora por negativa de **home care** — internacao d
 **Jurisprudencia:**
 - **STJ AgInt AREsp 1.232.473/MS** — criterios para home care
 - STJ AgInt REsp 1.901.234/SP — equivalencia funcional `[VERIFICAR jurisprudencia mais atual]`
-- STJ Sum. 469 (CDC) / 608 (coletivos) / 597 (autogestao)
+- STJ Sum. 608 (CDC aplica-se a planos, salvo autogestao) / Sum. 597 (carencia abusiva > 24h em emergencia)
+- **STF ADI 7265/DF** (Pleno, j. 18/09/2025, vinculante) — se a negativa for tratada como fora do Rol, exige os 5 requisitos cumulativos (art. 10§13 Lei 9.656)
 - TJSP / TJRJ recorrente — tese consolidada de cobertura quando ha equivalencia
 
 ## 3. Criterios pos-AgInt AREsp 1.232.473 (estrategia de procedencia)
@@ -56,9 +57,9 @@ A cobertura e devida quando:
 
 | Negativa | Tese |
 |----------|------|
-| **"Nao consta no Rol ANS"** | Lei 14.454/2022 + AgInt AREsp 1.232.473 + equivalencia funcional |
+| **"Nao consta no Rol ANS"** | Lei 14.454/2022 + AgInt AREsp 1.232.473 + equivalencia funcional + ADI 7265 (5 requisitos, se a via for "fora do Rol") |
 | **"Cuidador nao e medico"** | Equipe multidisciplinar e home care; cuidador isolado e outra coisa |
-| **"Sem cobertura para enfermagem 24h"** | Equivalencia com UTI/internacao + Sum. 469 |
+| **"Sem cobertura para enfermagem 24h"** | Equivalencia com UTI/internacao + Sum. 608 |
 | **"Tratamento experimental/paliativo"** | Distinguir — paliativo nao e experimental + Res. CFM 1.805/2006 (cuidados paliativos) |
 | **"Tempo limitado X dias"** | Necessidade clinica determina prazo, nao tabela arbitraria |
 | **Glosa de equipamento** | Concessao integral inclui equipamentos (ventilador, aspirador, cama hospitalar) |
@@ -69,7 +70,7 @@ A cobertura e devida quando:
 
 | Modalidade | Caracteristica | Cobertura |
 |------------|----------------|-----------|
-| **Home care propriamente dito** | Equipe multidisciplinar + acompanhamento continuo | Cobertura via Lei 14.454 + AgInt + Sum. 469 |
+| **Home care propriamente dito** | Equipe multidisciplinar + acompanhamento continuo | Cobertura via Lei 14.454 + AgInt + Sum. 608 |
 | **Atencao domiciliar (RN 211)** | Visitas eventuais (consulta, troca de curativo) | Cobertura prevista em RN |
 | **Cuidador domiciliar** | Profissional unico (geralmente enfermeiro) | Geralmente nao coberta — distinguir de home care |
 | **Internacao hospitalar prolongada** | Em hospital | Alternativa ao home care quando este nao cabe |
@@ -78,7 +79,7 @@ Confundir as 4 categorias enfraquece a peca.
 
 ## 6. Tutela de urgencia (CPC 300)
 
-**Fumus:** Lei 14.454 + Sum. 469 + AgInt AREsp 1.232.473 + parecer medico + criterios 1-5 demonstrados.
+**Fumus:** Lei 14.454 + Sum. 608 + AgInt AREsp 1.232.473 + ADI 7265 (se fora do Rol) + parecer medico + criterios 1-5 demonstrados.
 
 **Periculum:** paciente em risco se mantido em hospital com infeccao hospitalar (Lei 13.989/2020 art. relativo `[VERIFICAR]`); ou paciente estavel em alta hospitalar sem condicao de retorno domiciliar; sofrimento familiar.
 
@@ -108,8 +109,8 @@ I — FATOS — diagnostico, internacao, alta, prescricao de home care, negativa
 II — ISSUE — negativa viola Lei 9.656 + Lei 14.454 + AgInt AREsp 1.232.473?
 
 III — DIREITO
-  III.1 Regime — CDC 14 (PA-15) + Sum. 469 STJ
-  III.2 Lei 14.454/2022 — Rol exemplificativo
+  III.1 Regime — CDC 14 (PA-15) + Sum. 608 STJ
+  III.2 Lei 14.454/2022 — Rol exemplificativo + ADI 7265/STF (5 requisitos, se fora do Rol)
   III.3 Criterios AgInt AREsp 1.232.473:
         - Indicacao medica fundamentada
         - Equivalencia funcional com internacao
