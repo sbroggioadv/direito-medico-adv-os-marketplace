@@ -1,14 +1,16 @@
 {
-  "SessionStart": [
-    {
-      "matcher": "",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "echo '[direito-medico-adv-os] Plugin de direito medico ativo. Rode /start-medico para configurar. Defesa do profissional, paciente x operadora e consultivo de clinica.'",
-          "timeout": 5
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[direito-medico-adv-os] Plugin de direito medico ativo. Rode /start-medico para configurar. Defesa do profissional, paciente x operadora e consultivo de clinica.'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
 }
